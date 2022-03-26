@@ -55,6 +55,7 @@ fi
 
 chmod -R u=rwX,g=rX,o=rX /var/www/html
 chown -R www-data:root /var/www/html
+service apache2 restart
 
 if [ "$do_start" ]; then
     exec docker-php-entrypoint apache2-foreground
