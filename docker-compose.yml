@@ -30,5 +30,8 @@ services:
 
 volumes:
   akaunting-data:
+    external: true
   akaunting-modules:
+    external: true
   akaunting-db:
+    external: true

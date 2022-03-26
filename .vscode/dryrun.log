@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/marijus/Development/php/docker'
+AKAUNTING_SETUP=true docker-compose up -d
+make: Leaving directory '/home/marijus/Development/php/docker'
+ 
