@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Mar 26 17:54:08 2022
+# Make data base, printed on Sun Mar 27 08:06:02 2022
 
 # Variables
 
@@ -51,7 +53,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:44473
+JOURNAL_STREAM = 8:74512
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -77,7 +79,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 1788
+MANAGERPID = 2529
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -93,7 +95,7 @@ PATH = /home/marijus/.local/share/solana/install/active_release/bin:/home/mariju
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/marijus-MS-7971:@/tmp/.ICE-unix/2380,unix/marijus-MS-7971:/tmp/.ICE-unix/2380
+SESSION_MANAGER = local/marijus-MS-7971:@/tmp/.ICE-unix/3325,unix/marijus-MS-7971:/tmp/.ICE-unix/3325
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -111,7 +113,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 8db535ff4a2f4e02be061681cd32e694
+INVOCATION_ID = f2c17a0be5ec490aa459fa18aebdfc99
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/91/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -137,7 +139,7 @@ PWD = /home/marijus/Development/php/docker
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2344
+SSH_AGENT_PID = 3263
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -195,7 +197,7 @@ NIX_PROFILES = /nix/var/nix/profiles/default /home/marijus/.nix-profile
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1ae1fa94-58a2-49ea-8e6d-afa7a97ad5f6.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-37c60ee8-0fdd-4add-a4ae-abe954d69e7e.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -259,11 +261,11 @@ LC_ALL = C
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/d20ad806_5aeb_4702_be29_8e5aac424581
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/32289264_a1b5_4126_8f45_9d1cc1dabce5
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.417
+GNOME_TERMINAL_SERVICE = :1.96
 # default
 SUFFIXES := 
 # environment
@@ -275,6 +277,7 @@ WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
+ 
 GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
@@ -285,11 +288,8 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 439077
+VSCODE_PID = 7798
 # variable set hash-table stats:
- 
-make: *** No rule to make target 'all'.  Stop.
- 
 # Load=138/1024=13%, Rehash=0, Collisions=20/163=12%
 
 # Pattern-specific Variable Values
@@ -298,9 +298,9 @@ make: *** No rule to make target 'all'.  Stop.
 
 # Directories
 
-# . (device 66306, inode 9462037): 12 files, no impossibilities.
+# . (device 66306, inode 9462037): 11 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -331,7 +331,7 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
-.PHONY: setup stop start backup seed
+.PHONY: setup stop start backup seed logs
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -339,7 +339,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-26 15:13:12.20990113
+#  Last modified 2022-03-26 18:08:31.884377756
 #  File has been updated.
 #  Successfully updated.
 
@@ -349,7 +349,7 @@ start:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 6):
-	docker-compose up -docker
+	docker-compose up -d
 
 seed:
 #  Phony target (prerequisite of .PHONY).
@@ -373,20 +373,28 @@ backup:
 #  Modification time never checked.
 #  File has not been updated.
 
+logs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
+	docker logs --details akaunting
+
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/25=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/27=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 191 B / avg = 8 B
-# current buf: size = 8162 B / used = 191 B / count = 23 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 186 B / avg = 8 B
+# current buf: size = 8162 B / used = 186 B / count = 23 / avg = 8 B
 
-# strcache performance: lookups = 38 / hit rate = 39%
+# strcache performance: lookups = 40 / hit rate = 42%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=1/38=3%
-# Finished Make data base on Sat Mar 26 17:54:08 2022
+# Load=23/8192=0%, Rehash=0, Collisions=1/40=2%
+# Finished Make data base on Sun Mar 27 08:06:02 2022
 
  
