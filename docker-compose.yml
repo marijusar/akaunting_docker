@@ -13,7 +13,7 @@ services:
       - akaunting-modules:/var/www/html/modules
     restart: unless-stopped
     env_file:
-      - env/run.env
+      - stack.env
     environment:
       - AKAUNTING_SETUP
     depends_on:
@@ -26,12 +26,9 @@ services:
       - akaunting-db:/var/lib/mysql
     restart: unless-stopped
     env_file:
-      - env/db.env
+      - stack.env
 
 volumes:
   akaunting-data:
-    external: true
   akaunting-modules:
-    external: true
   akaunting-db:
-    external: true
