@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Mar 28 08:31:37 2022
+# Make data base, printed on Wed Mar 30 19:42:01 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:49284
+JOURNAL_STREAM = 8:49051
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -79,7 +79,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 2385
+MANAGERPID = 2337
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -95,7 +95,7 @@ PATH = /home/marijus/.local/share/solana/install/active_release/bin:/home/mariju
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/marijus-MS-7971:@/tmp/.ICE-unix/2617,unix/marijus-MS-7971:/tmp/.ICE-unix/2617
+SESSION_MANAGER = local/marijus-MS-7971:@/tmp/.ICE-unix/2928,unix/marijus-MS-7971:/tmp/.ICE-unix/2928
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -113,7 +113,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 193bf83287c749ff970e59a30a5a3e50
+INVOCATION_ID = fad9e815fa66416aa7ee1341bcc6a728
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/91/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -139,7 +139,7 @@ PWD = /home/marijus/Development/php/docker
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2582
+SSH_AGENT_PID = 2892
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -197,7 +197,7 @@ NIX_PROFILES = /nix/var/nix/profiles/default /home/marijus/.nix-profile
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e2942a81-440c-4479-b91f-91c286758c15.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1a6c1d62-f2ed-48bc-ab85-7687fdc795e8.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -239,6 +239,8 @@ GDK_BACKEND = x11
 # environment
 LC_PAPER = lt_LT.UTF-8
 # environment
+NO_AT_BRIDGE = 1
+# environment
 LC_IDENTIFICATION = lt_LT.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
@@ -261,11 +263,11 @@ LC_ALL = C
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/0aac3b2a_4855_484b_ad15_d5e45b684ee4
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/794824df_442f_4a78_8b63_2f2be8d14f88
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.100
+GNOME_TERMINAL_SERVICE = :1.82
 # default
 SUFFIXES := 
 # environment
@@ -275,9 +277,10 @@ CHROME_DESKTOP = code-url-handler.desktop
 # environment
 WINDOWPATH = 2
 # default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
  
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+ 
+# environment
 GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
@@ -288,9 +291,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 7867
+VSCODE_PID = 4438
 # variable set hash-table stats:
-# Load=138/1024=13%, Rehash=0, Collisions=20/163=12%
+# Load=139/1024=14%, Rehash=0, Collisions=20/164=12%
 
 # Pattern-specific Variable Values
 
@@ -395,6 +398,6 @@ logs:
 # strcache performance: lookups = 41 / hit rate = 41%
 # hash-table stats:
 # Load=24/8192=0%, Rehash=0, Collisions=1/41=2%
-# Finished Make data base on Mon Mar 28 08:31:37 2022
+# Finished Make data base on Wed Mar 30 19:42:01 2022
 
  

@@ -54,4 +54,4 @@ COPY files/akaunting.sh /usr/local/bin/akaunting.sh
 COPY files/html /var/www/html
 
 ENTRYPOINT ["/usr/local/bin/akaunting.sh"]
-CMD ["--start"]
+CMD ["--setup"]

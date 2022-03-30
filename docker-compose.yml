@@ -7,13 +7,13 @@ services:
     build:
       context: .
     ports:
-      - 8080:80
+      - 8085:80
     volumes:
       - akaunting-data:/var/www/html/storage
       - akaunting-modules:/var/www/html/modules
     restart: unless-stopped
     env_file:
-      - stack.env
+      - env/run.env
     environment:
       - AKAUNTING_SETUP
     depends_on:
@@ -26,7 +26,7 @@ services:
       - akaunting-db:/var/lib/mysql
     restart: unless-stopped
     env_file:
-      - stack.env
+      - env/db.env
 
 volumes:
   akaunting-data:
